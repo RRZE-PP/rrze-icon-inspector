@@ -1,0 +1,26 @@
+#!/bin/bash
+
+# Some fiddling with the search path to make MacOS and ports happy :)
+PATH=/opt/local/bin:$PATH
+
+
+#
+# Convenience script matching only for my environment!
+# Don't use this. But if you want you can cook up your own script
+# based on this one.
+
+cd `dirname $0`/../../../
+
+
+# Check and generate and copy to webdir
+#sh inspect.sh --verbose --icon-dir=../../svn/rrze-icon-set/trunk/tango && cp generated/gallery.css ../../svn/rrze-icon-set/trunk/website/css/ && cp generated/gallery.html ../../svn/rrze-icon-set/trunk/website/ && cat errors.log
+
+# Check and generate
+#sh inspect.sh --verbose --icon-dir=../../svn/rrze-icon-set/trunk/tango && cat errors.log
+
+# Check only
+#sh inspect.sh --verbose --no-html --icon-dir=../../svn/rrze-icon-set/trunk/tango && cat errors.log
+#sh xinspect.sh --verbose --no-html --icon-dir=../../svn/rrze-icon-set/trunk/tango
+./ginspect.sh --verbose --no-overview-generate --no-html --icon-dir=../../RRZE/svn/rrze-icon-set/tango
+
+

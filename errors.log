@@ -1,0 +1,7 @@
+PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/lib/php5/extensions/php_gtk2.so' - /usr/lib/php5/extensions/php_gtk2.so: undefined symbol: php_cairo_get_context_ce in Unknown on line 0
+PHP Warning:  Module 'gd' already loaded in Unknown on line 0
+WARNING:        [emblems/fau_org]                                     Empty 'keywords' field.
+WARNING:        [emblems/gradschool]                                  Empty 'keywords' field.
+WARNING:        [logos/groupwise]                                     Empty 'keywords' field.
+WARNING:        [logos/siport]                                        Empty 'keywords' field.
+WARNING:        [emblems/zuv_linux]                                   Empty 'keywords' field.

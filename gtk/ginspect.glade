@@ -1,0 +1,225 @@
+<?xml version="1.0"?>
+<glade-interface>
+  <!-- interface-requires gtk+ 2.6 -->
+  <!-- interface-naming-policy toplevel-contextual -->
+  <widget class="GtkWindow" id="mainWindow">
+    <property name="visible">True</property>
+    <property name="title" translatable="yes">RRZE Icon Inspector</property>
+    <property name="default_width">640</property>
+    <property name="default_height">480</property>
+    <property name="icon">inspector-hat-16x16.png</property>
+    <property name="type_hint">dialog</property>
+    <signal name="destroy" handler="on_mainWindow_destroy"/>
+    <child>
+      <widget class="GtkLayout" id="layout1">
+        <property name="visible">True</property>
+        <property name="hadjustment">0 0 640 0 570.60000000000002 634</property>
+        <property name="vadjustment">0 0 513 0 461.69999999999999 513</property>
+        <property name="width">640</property>
+        <property name="height">150</property>
+        <child>
+          <widget class="GtkCheckButton" id="checkAutoGenerate">
+            <property name="label" translatable="yes">_Auto-generate missing sizes using Inkscape</property>
+            <property name="width_request">400</property>
+            <property name="height_request">20</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="receives_default">False</property>
+            <property name="use_underline">True</property>
+            <property name="draw_indicator">True</property>
+            <signal name="toggled" handler="on_checkAutoGenerate_toggled"/>
+          </widget>
+          <packing>
+            <property name="x">20</property>
+            <property name="y">115</property>
+          </packing>
+        </child>
+        <child>
+          <widget class="GtkCheckButton" id="checkBuildHtml">
+            <property name="label" translatable="yes">_Generate HTML overview page</property>
+            <property name="width_request">400</property>
+            <property name="height_request">20</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="receives_default">False</property>
+            <property name="use_underline">True</property>
+            <property name="draw_indicator">True</property>
+            <signal name="toggled" handler="on_checkBuildHtml_toggled"/>
+          </widget>
+          <packing>
+            <property name="x">20</property>
+            <property name="y">140</property>
+          </packing>
+        </child>
+        <child>
+          <widget class="GtkProgressBar" id="progressbar">
+            <property name="width_request">585</property>
+            <property name="height_request">20</property>
+            <property name="visible">True</property>
+            <property name="show_text">True</property>
+          </widget>
+          <packing>
+            <property name="x">20</property>
+            <property name="y">400</property>
+          </packing>
+        </child>
+        <child>
+          <widget class="GtkButton" id="buttonRun">
+            <property name="label" translatable="yes">_Run</property>
+            <property name="width_request">100</property>
+            <property name="height_request">30</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="receives_default">True</property>
+            <property name="use_underline">True</property>
+            <signal name="clicked" handler="on_buttonRun_clicked"/>
+          </widget>
+          <packing>
+            <property name="x">160</property>
+            <property name="y">440</property>
+          </packing>
+        </child>
+        <child>
+          <widget class="GtkEntry" id="textBaseUrl">
+            <property name="width_request">415</property>
+            <property name="height_request">25</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <signal name="focus_out_event" handler="on_textBaseUrl_focus_out_event"/>
+          </widget>
+          <packing>
+            <property name="x">20</property>
+            <property name="y">252</property>
+          </packing>
+        </child>
+        <child>
+          <widget class="GtkLabel" id="label1">
+            <property name="width_request">150</property>
+            <property name="height_request">20</property>
+            <property name="visible">True</property>
+            <property name="xalign">0</property>
+            <property name="label" translatable="yes">Icon Path</property>
+          </widget>
+          <packing>
+            <property name="x">20</property>
+            <property name="y">318</property>
+          </packing>
+        </child>
+        <child>
+          <widget class="GtkLabel" id="label2">
+            <property name="width_request">150</property>
+            <property name="height_request">20</property>
+            <property name="visible">True</property>
+            <property name="xalign">0</property>
+            <property name="label" translatable="yes">Base URL</property>
+          </widget>
+          <packing>
+            <property name="x">20</property>
+            <property name="y">230</property>
+          </packing>
+        </child>
+        <child>
+          <widget class="GtkEntry" id="textIconPath">
+            <property name="width_request">415</property>
+            <property name="height_request">25</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <signal name="focus_out_event" handler="on_textIconPath_focus_out_event"/>
+          </widget>
+          <packing>
+            <property name="x">20</property>
+            <property name="y">337</property>
+          </packing>
+        </child>
+        <child>
+          <widget class="GtkLabel" id="labelStatus">
+            <property name="width_request">585</property>
+            <property name="height_request">20</property>
+            <property name="visible">True</property>
+            <property name="xalign">0</property>
+            <property name="yalign">0</property>
+            <property name="label" translatable="yes">Ready</property>
+          </widget>
+          <packing>
+            <property name="x">20</property>
+            <property name="y">381</property>
+          </packing>
+        </child>
+        <child>
+          <widget class="GtkFileChooserButton" id="chooserIconPath">
+            <property name="width_request">150</property>
+            <property name="height_request">30</property>
+            <property name="visible">True</property>
+            <property name="action">select-folder</property>
+            <signal name="current_folder_changed" handler="on_chooserIconPath_current_folder_changed"/>
+          </widget>
+          <packing>
+            <property name="x">459</property>
+            <property name="y">334</property>
+          </packing>
+        </child>
+        <child>
+          <widget class="GtkButton" id="buttonCancel">
+            <property name="label" translatable="yes">_Cancel</property>
+            <property name="width_request">100</property>
+            <property name="height_request">30</property>
+            <property name="visible">True</property>
+            <property name="sensitive">False</property>
+            <property name="can_focus">True</property>
+            <property name="receives_default">True</property>
+            <property name="use_underline">True</property>
+            <signal name="clicked" handler="on_buttonCancel_clicked"/>
+          </widget>
+          <packing>
+            <property name="x">375</property>
+            <property name="y">440</property>
+          </packing>
+        </child>
+        <child>
+          <widget class="GtkCheckButton" id="checkOverviewImageGenerate">
+            <property name="label" translatable="yes">Generate PNG _overview image</property>
+            <property name="width_request">400</property>
+            <property name="height_request">20</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="receives_default">False</property>
+            <property name="use_underline">True</property>
+            <property name="draw_indicator">True</property>
+            <signal name="toggled" handler="on_checkOverviewImageGenerate_toggled"/>
+          </widget>
+          <packing>
+            <property name="x">20</property>
+            <property name="y">165</property>
+          </packing>
+        </child>
+      </widget>
+    </child>
+  </widget>
+  <widget class="GtkWindow" id="logWindow">
+    <property name="title" translatable="yes">errors.log</property>
+    <property name="default_width">800</property>
+    <property name="default_height">600</property>
+    <property name="icon">inspector-hat-16x16.png</property>
+    <property name="type_hint">dialog</property>
+    <child>
+      <widget class="GtkScrolledWindow" id="scrolledwindow1">
+        <property name="visible">True</property>
+        <property name="can_focus">True</property>
+        <property name="hscrollbar_policy">automatic</property>
+        <property name="vscrollbar_policy">automatic</property>
+        <child>
+          <widget class="GtkTextView" id="textviewLog">
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="pixels_above_lines">2</property>
+            <property name="pixels_below_lines">2</property>
+            <property name="editable">False</property>
+            <property name="left_margin">10</property>
+            <property name="right_margin">10</property>
+            <property name="accepts_tab">False</property>
+          </widget>
+        </child>
+      </widget>
+    </child>
+  </widget>
+</glade-interface>
