@@ -1,0 +1,111 @@
+22.09.2010 - v0.5.3
+===================
+- fixed missing pixel bug 
+  (http://developer.berlios.de/bugs/?func=detailbug&bug_id=17141&group_id=10773)
+- fixed setMetaTitle bug 
+  (http://developer.berlios.de/bugs/?func=detailbug&bug_id=17363&group_id=10773)
+- added available sizes feature
+  (http://developer.berlios.de/feature/?func=detailfeature&feature_id=5017&group_id=10773)
+- fixed check icons after auto-generation
+  (http://developer.berlios.de/bugs/?func=detailbug&bug_id=17140&group_id=10773)
+- won't fix glade error on jaunty
+  (http://developer.berlios.de/bugs/?func=detailbug&bug_id=17139&group_id=10773)
+
+
+20.09.2010 - v0.5.1
+===================
+- Added HtmlGallery class and moved big pieces of code in there for cleanup reasons
+- Now the IconInspector does not have to be closed to do a second run
+
+
+10.05.2010 - v0.5.0
+===================
+- Updated press release and screenshots for the upcoming RRZE Icon Set 2.1 release 
+- finally added long overdue versioning to the Icon Inspector
+- versioning starting at 0.5.0 because of the already many features
+- version prefixes like CLI-0.5.0, GTK-0.5.0 give further information which interface is used.
+  This ought to ease bug-tracking.
+
+
+08.05.2010
+==========
+- fixed some problems on windows
+- some cleaning up
+- added check for duplicate icons by comparison of icon file basenames
+- added check for non-quadratic fixed size icons
+- some minor performance improvements
+
+
+06.05.2010
+==========
+- put together a easily installable PHP package for Windows including
+  all necessary extensions like PHP-GTK and PHP-GD -- will soon be available 
+  for download (is now available at: http://www.geek-blog.de/php-gtk-2-0-1-inklusive-gd-fur-windows.html)
+- added some convenience functions for the upcoming Windows support
+
+
+02.05.2010
+==========
+- First working version of the overview image generation using PHP's GD library
+- added many configuration options to config.php 
+- much cleaning up -- espeacially around the new image generation classes
+
+
+20.04.2010
+==========
+- modified template for lightbox2 so that all icons are now in one big lightbox2 gallery
+- added some checks for configuration errors
+
+
+19.04.2010
+==========
+- added filter for private data in some of the Inkscape SVG XML attributes 
+- some bugfixes
+- implemented workaround for sorting alphabethically (by title) for the HTML gallery but
+  title is missing (-> now uses the filename as fallback)
+- added new feature: autofix_meta_title
+- added lightbox2 support to HTML gallery
+
+
+02.11.2009
+==========
+- added correct license teext to all files
+
+
+10.09.2009
+==========
+- fixed some bugs
+- first press release version
+
+09.09.2009
+==========
+- more fixes
+- added own Icon Inspector Icon ;)
+- added status message with currently processes icon to the GTK dialog
+
+
+08.09.2009
+==========
+- some fixes
+- added alphabethical index with anchors
+- some updates to the GTK version
+- added screenshots
+- made log window scrollable
+
+
+07.09.2009
+==========
+- added CLI options
+- added GTK dialog
+- added simple log file viewer to the GTK version
+
+
+04.09.2009
+==========
+- added check for misplaced files
+
+
+28.08.2009
+==========
+- first version
+- basic icon gallery generation
