@@ -59,7 +59,7 @@ $version = "0.5.6";
  */
 
 // RRZE ICON SET
-$dir = '../../../tango';
+$dir = '../rrze-icon-set/tango';
 
 // TANGO ART LIBRE
 //$dir = '/home/floeffler/Documents/RRZE/cvs/tango-art-libre';
