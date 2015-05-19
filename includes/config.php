@@ -31,7 +31,8 @@ $version = "0.5.6";
  * CONFIGURATION
  */
 
-
+//setting the timezone to get rid of the warning
+date_default_timezone_set('Europe/Berlin');
 
 
 /*

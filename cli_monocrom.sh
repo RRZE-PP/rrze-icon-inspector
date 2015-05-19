@@ -1,2 +1,2 @@
 #!/bin/bash
-./inspect.sh --icon-dir=../../../monocrom --web-url=http://svn.berlios.de/svnroot/repos/rrze-icon-set/trunk/monocrom
+./inspect.sh --icon-dir=../rrze-icon-set/monocrom --web-url=https://github.com/RRZE-PP/rrze-icon-set/tree/master/monocrom
