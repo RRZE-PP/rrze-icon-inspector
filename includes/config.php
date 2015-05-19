@@ -62,7 +62,7 @@ $version = "0.5.6";
 $dir = '../rrze-icon-set/tango';
 
 // TANGO ART LIBRE
-//$dir = '/home/floeffler/Documents/RRZE/cvs/tango-art-libre';
+//$dir = '../cvs/tango-art-libre';
 
 
 
@@ -80,7 +80,7 @@ $dir = '../rrze-icon-set/tango';
  */
 
 // RRZE ICON SET
-$web = 'http://svn.berlios.de/svnroot/repos/rrze-icon-set/trunk/tango';
+$web = 'https://github.com/RRZE-PP/rrze-icon-set/tree/master/tango';
 
 // TANGO ART LIBRE
 //$web = 'http://tango.freedesktop.org/static/cvs/tango-art-libre';
@@ -104,7 +104,7 @@ $build_html = true;
  * Uses an installed inkscape to automatically generate missing 
  * fixed-size icons.
  */
-$auto_generate_missing = true;
+$auto_generate_missing = false;
 $inkscape_executable = "inkscape";
 $inkscape_executableWin = "C:/Program Files/inkscape/inkscape.exe";
 $inkscape_executableMac = "/Applications/Inkscape.app/Contents/Resources/bin/inkscape";
