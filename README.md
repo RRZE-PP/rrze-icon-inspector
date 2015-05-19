@@ -5,8 +5,8 @@ RRZE Icon Inspector
 
 0. Quick usage
 --------------
-After downloading the Icon Inspecor adjust the settings in the config.php file 
-to your needs. The file is well commented and should (hopefully) be self 
+After downloading the Icon Inspecor adjust the settings in the includes/config.php
+file to your needs. The file is well commented and should (hopefully) be self 
 explanatory.
 
 Always start the icon inspector via the included inspect.sh script. This

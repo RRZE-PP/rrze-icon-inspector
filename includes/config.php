@@ -167,7 +167,7 @@ $overview_fontColor = array(0,0,0);
 $overview_fontFile = "/usr/share/fonts/truetype/msttcorefonts/Verdana.ttf";
 //$overview_fontFile = "/usr/share/fonts/truetype/ttf-bitstream-vera/Vera.ttf";
 $overview_fontFileWin = "C:/Windows/Fonts/verdana.ttf";
-$overview_fontFileMac = "/usr/X11/lib/X11/fonts/TTF/Vera.ttf";
+$overview_fontFileMac = "/opt/X11/share/fonts/TTF/Vera.ttf";
 $overview_textPadding = 5;
 
 // bounding box with shade and rounded corners for every icon
