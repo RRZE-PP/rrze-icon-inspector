@@ -12,6 +12,10 @@ Thumbs.db
 
 # project specific files #
 errors.log
+!generated/monocrom/.ignoreme
 generated/monocrom/**
+!generated/tango/.ignoreme
 generated/tango/**
+!generated/bicons/.ignoreme
+generated/bicons/**
 
