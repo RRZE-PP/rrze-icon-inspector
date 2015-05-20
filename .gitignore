@@ -12,10 +12,13 @@ Thumbs.db
 
 # project specific files #
 errors.log
-!generated/monocrom/.ignoreme
-generated/monocrom/**
-!generated/tango/.ignoreme
-generated/tango/**
-!generated/bicons/.ignoreme
-generated/bicons/**
 
+#allowing the directory structure to be committed but not the generated files
+generated/monocrom/**
+!generated/monocrom/.ignoreme
+
+generated/tango/**
+!generated/tango/.ignoreme
+
+generated/bicons/**
+!generated/bicons/.ignoreme
